@@ -1,0 +1,49 @@
+{
+  "name": "@linkedmink/d-ad-market-workspace",
+  "version": "1.0.0-0",
+  "description": "DAdMarket provides a self-managed solution for advertisers and ad space providers to negotiate transparently and competitively",
+  "keywords": [
+    "Advertiser",
+    "Ad Space",
+    "DApp",
+    "Ethereum",
+    "Distributed",
+    "Smart Contract",
+    "Solidity"
+  ],
+  "homepage": "https://github.com/LinkedMink/d-ad-market#readme",
+  "bugs": {
+    "url": "https://github.com/LinkedMink/d-ad-market/issues",
+    "email": "harlan.sang@linkedmink.net"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Harlan Sang",
+    "email": "harlan.sang@linkedmink.net",
+    "url": "https://github.com/LinkedMink"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/LinkedMink"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LinkedMink/d-ad-market.git"
+  },
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test:ci --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "postinstall": "husky install || cd ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7"
+  },
+  "workspaces": [
+    "packages/smart-contracts"
+  ]
+}

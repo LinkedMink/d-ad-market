@@ -1,0 +1,58 @@
+{
+  "name": "@linkedmink/d-ad-market-contracts",
+  "version": "1.0.0-0",
+  "description": "DAdMarket provides a self-managed solution for advertisers and ad space providers to negotiate transparently and competitively",
+  "keywords": [
+    "Advertiser",
+    "Ad Space",
+    "DApp",
+    "Ethereum",
+    "Distributed",
+    "Smart Contract",
+    "Solidity"
+  ],
+  "homepage": "https://github.com/LinkedMink/d-ad-market#readme",
+  "bugs": {
+    "url": "https://github.com/LinkedMink/d-ad-market/issues",
+    "email": "harlan.sang@linkedmink.net"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Harlan Sang",
+    "email": "harlan.sang@linkedmink.net",
+    "url": "https://github.com/LinkedMink"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/LinkedMink"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LinkedMink/d-ad-market.git",
+    "directory": "packages/smart-contracts"
+  },
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile --typecheck",
+    "test": "REPORT_GAS=true hardhat test --typecheck",
+    "test:ci": "hardhat coverage --typecheck",
+    "lint": "eslint {scripts,test}/**/*.{m,c,}ts *.{,m,c}{j,t}s"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@tsconfig/node18": "^1.0.1",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/eslint": "^8.37.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "hardhat": "^2.13.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
