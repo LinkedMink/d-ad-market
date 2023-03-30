@@ -1,14 +1,20 @@
 # DAdMarket White Paper
 
+The white paper describes a distributed solution that transparently allows advertisers to negotiate ad slot space with the provider.
+
 ## Motivations
 
 TODO
 
-## Entities
+## High Level Design
+
+### Entities
 
 - Broker Pool: A distributed set of nodes with their own private key. They will verify that each broker in the pool's ad logs correspond to slot holder logs and take a cut from the advertisers as a reward for facilitation.
+- Advertiser:
+- Ad Slot Holder:
 
-## Phases
+## Road Map
 
 ### Phase 1 - POC Static Ads and Verification
 
@@ -85,3 +91,5 @@ TODO
   - Negotiate with popular platforms
   - Pre-built self-contained components
   - Public interface and broker registries for custom integrations
+
+## Wrap Up

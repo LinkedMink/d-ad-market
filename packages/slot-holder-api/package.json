@@ -1,5 +1,5 @@
 {
-  "name": "@linkedmink/d-ad-market-smart-contracts",
+  "name": "@linkedmink/d-ad-market-slot-holder-api",
   "version": "1.0.0-0",
   "description": "DAdMarket provides a self-managed solution for advertisers and ad space providers to negotiate transparently and competitively",
   "keywords": [
@@ -26,25 +26,26 @@
     "type": "individual",
     "url": "https://github.com/sponsors/LinkedMink"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/LinkedMink/d-ad-market.git",
-    "directory": "packages/smart-contracts"
+    "directory": "packages/slot-holder-api"
   },
   "private": true,
   "scripts": {
-    "build": "hardhat compile --typecheck",
-    "clean": "rimraf artifacts cache typechain-types",
-    "test": "REPORT_GAS=true hardhat test --typecheck",
-    "test:ci": "hardhat coverage --typecheck",
-    "lint": "eslint {scripts,test}/**/*.{m,c,}ts *.{,m,c}{j,t}s"
+    "build": "echo TODO",
+    "clean": "rimraf dist coverage",
+    "test": "echo TODO",
+    "test:ci": "echo TODO",
+    "lint": "echo TODO"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
-    "@types/chai": "^4.3.4",
-    "@types/mocha": "^10.0.1",
-    "hardhat": "^2.13.0",
-    "ts-node": "^10.9.1",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "jest-mock-extended": "^3.0.4",
+    "ts-jest": "^29.0.5",
     "typescript": "^5.0.2"
   }
 }

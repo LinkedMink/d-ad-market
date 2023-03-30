@@ -33,17 +33,31 @@
   "private": true,
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "test": "npm run test:ci --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "test:ci": "npm run test:ci --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "postinstall": "husky install || cd ."
   },
   "devDependencies": {
+    "@tsconfig/node18": "^1.0.1",
+    "@types/eslint": "^8.37.0",
     "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "type-fest": "^3.7.2",
+    "typescript": "^5.0.2"
   },
   "workspaces": [
-    "packages/smart-contracts"
+    "packages/broker-api",
+    "packages/example-web-app",
+    "packages/slot-holder-api",
+    "packages/smart-contracts",
+    "packages/web-components"
   ]
 }

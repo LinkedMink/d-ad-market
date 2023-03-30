@@ -1,8 +1,8 @@
-# Sample Hardhat Project
+# DAdMarket - Smart Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Build and testing project for Ethereum smart contracts that facilitate exchange of ad slot tokens
 
-Try running some of the following tasks:
+## Getting Started
 
 ```shell
 npx hardhat help
